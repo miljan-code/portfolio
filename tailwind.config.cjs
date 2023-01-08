@@ -7,6 +7,8 @@ module.exports = {
       colors: {
         primary: '#2DD4BF',
         primaryDark: '#12554c',
+        bgcol: '#111827',
+        bgcolLight: '#1e293b',
       },
       fontFamily: {
         open: ['Open Sans', 'sans-serif'],
