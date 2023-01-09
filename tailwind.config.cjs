@@ -13,13 +13,18 @@ module.exports = {
       fontFamily: {
         open: ['Open Sans', 'sans-serif'],
       },
+      boxShadow: {
+        light: '0px 1px 3px rgba(255,255,255,.1);',
+        dark: '0px 1px 3px rgba(0,0,0,.1);',
+      },
     },
     screens: {
       xs: '480px',
       ss: '620px',
       sm: '768px',
-      md: '1060px',
-      lg: '1200px',
+      ms: '1000px',
+      md: '1080px',
+      lg: '1150px',
       xl: '1700px',
     },
   },
