@@ -1,0 +1,23 @@
+[
+  {
+    "id": "thirsty",
+    "name": "I'm  Thirsty",
+    "technologies": ["React", "React Query"]
+  },
+  {
+    "id": "blog",
+    "name": "React Blog",
+    "technologies": ["React", "React Query", "Firebase"]
+  },
+  {
+    "id": "lingo",
+    "name": "MemoLingo",
+    "technologies": [
+      "React",
+      "React Query",
+      "Firebase",
+      "Tailwind",
+      "Typescript"
+    ]
+  }
+]
