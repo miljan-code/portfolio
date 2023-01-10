@@ -79,7 +79,7 @@ const App = () => {
             </div>
           </section>
           <section className="mt-[10rem] pb-[5rem]">
-            <h2 className="text-[2.4rem] font-semibold text-left xs:text-center">
+            <h2 className="text-[2.4rem] font-semibold text-left xs:text-center ms:text-left">
               My projects
             </h2>
             <div className="mt-[2rem] flex flex-col ms:flex-row xs:max-w-[400px] ms:max-w-full xs:mx-auto gap-[3rem]">
