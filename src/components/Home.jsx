@@ -1,28 +1,40 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-import me from '../assets/profile-pic-12.png';
-import cocktails from '../assets/cocktails.jpg';
-import reactpic from '../assets/react.png';
-import lingo from '../assets/lingo.jpg';
+import { motion } from "framer-motion";
 
-import { HiArrowRight } from 'react-icons/hi';
+import me from "../assets/profile-pic-12.png";
+import cocktails from "../assets/cocktails.jpg";
+import reactpic from "../assets/react.png";
+import lingo from "../assets/lingo.jpg";
+
+import { HiArrowRight } from "react-icons/hi";
 
 const Home = () => {
   return (
-    <>
-      <section className="flex flex-col-reverse ss:flex-row mt-[5rem] ss:mt-[10rem] items-center gap-[3rem]">
-        <div className="flex-1">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
+      <section className="flex flex-col-reverse ss:flex-row mt-[4rem] ss:mt-[9rem] items-center gap-[3rem]">
+        <div className="flex-1 text-center ss:text-left">
+          <span className="font-bold mb-[1rem] inline-block tracking-wider pl-1">
+            HELLO
+          </span>
           <h2 className="text-center ss:text-left text-[3.5rem] sm:text-[3.8rem] ms:text-[4rem] md:text-[4.4rem] font-bold">
-            I'm{' '}
+            I'm{" "}
             <span className="text-primaryDark dark:text-primary">Miljan</span>.
             I'm a front-end developer and React & Javascript enthusiast.
           </h2>
-          <button className="mt-[4rem] text-3xl font-semibold bg-primaryDark text-white hover:bg-black dark:bg-white px-6 py-4 rounded-full dark:text-bgcol dark:hover:bg-primary transition-all flex items-center gap-2 mx-auto ss:mx-0">
-            More about me{' '}
+          <Link
+            to="about"
+            className="mt-[4rem] text-3xl font-semibold bg-primaryDark text-white hover:bg-black dark:bg-white px-6 py-4 rounded-full dark:text-bgcol dark:hover:bg-primary transition-all inline-flex items-center gap-2 mx-auto ss:mx-0"
+          >
+            More about me{" "}
             <span className="mt-1">
               <HiArrowRight size={15} />
             </span>
-          </button>
+          </Link>
         </div>
         <div>
           <img
@@ -32,7 +44,7 @@ const Home = () => {
           />
         </div>
       </section>
-      <section className="mt-[10rem] pb-[5rem]">
+      <section className="mt-[10rem] pb-[5rem] text-center">
         <h2 className="text-[2.4rem] font-semibold text-left xs:text-center ms:text-left">
           My projects
         </h2>
@@ -45,22 +57,28 @@ const Home = () => {
             />
             <div className="relative">
               <Link
-                to="projects/thirsty"
+                to="projects#thirsty"
                 className="absolute top-[-2rem] left-[50%] translate-x-[-50%] bg-primaryDark text-white dark:bg-white dark:text-bgcol px-6 py-3 text-3xl rounded-full font-semibold cursor-pointer"
               >
                 I'm Thirsty
               </Link>
             </div>
-            <div className="mt-[3rem] px-6">
-              <h3 className="text-center mb-5">Technologies I used:</h3>
+            <div className="mt-[4rem] px-6">
+              <h3 className="text-center mb-2 uppercase text-primaryDark dark:text-primary pl-[1rem]">
+                TECH STACK
+              </h3>
               <ul className="mt-2 pl-4 mb-[2rem] text-center">
                 <li>React</li>
                 <li>React Query</li>
               </ul>
             </div>
-            <button className="mt-auto mx-auto w-[10rem] border-2 rounded-full border-primaryDark hover:bg-primaryDark hover:text-white dark:border-primary mb-[2rem] text-[1.8rem] font-semibold dark:hover:bg-primary dark:hover:text-bgcol transition-all">
+            <a
+              href="https://im-thirsty.netlify.app/"
+              target="_blank"
+              className="mt-auto mx-auto w-[10rem] border-2 rounded-full border-primaryDark hover:bg-primaryDark hover:text-white dark:border-primary mb-[2rem] text-[1.8rem] font-semibold dark:hover:bg-primary dark:hover:text-bgcol transition-all text-center"
+            >
               Visit
-            </button>
+            </a>
           </div>
           <div className="flex-1 bg-white dark:bg-bgcolLight rounded-3xl overflow-hidden flex flex-col shadow-dark dark:shadow-none">
             <img
@@ -70,23 +88,29 @@ const Home = () => {
             />
             <div className="relative">
               <Link
-                to="/projects/blog"
+                to="/projects#blog"
                 className="absolute top-[-2rem] left-[50%] translate-x-[-50%] bg-primaryDark text-white dark:bg-white dark:text-bgcol px-6 py-3 text-3xl rounded-full font-semibold cursor-pointer"
               >
                 React Blog
               </Link>
             </div>
-            <div className="mt-[3rem] px-6">
-              <h3 className="text-center mb-5">Technologies I used:</h3>
+            <div className="mt-[4rem] px-6">
+              <h3 className="text-center mb-2 uppercase text-primaryDark dark:text-primary pl-[1rem]">
+                TECH STACK
+              </h3>
               <ul className="mt-2 pl-4 mb-[2rem] text-center">
                 <li>React</li>
                 <li>React Query</li>
                 <li>Firebase</li>
               </ul>
             </div>
-            <button className="mt-auto mx-auto w-[10rem] border-2 rounded-full border-primaryDark hover:bg-primaryDark hover:text-white dark:border-primary mb-[2rem] text-[1.8rem] font-semibold dark:hover:bg-primary dark:hover:text-bgcol transition-all">
+            <a
+              href="https://react-blog-miljan.netlify.app/"
+              target="_blank"
+              className="mt-auto mx-auto w-[10rem] border-2 rounded-full border-primaryDark hover:bg-primaryDark hover:text-white dark:border-primary mb-[2rem] text-[1.8rem] font-semibold dark:hover:bg-primary dark:hover:text-bgcol transition-all text-center"
+            >
               Visit
-            </button>
+            </a>
           </div>
           <div className="flex-1 bg-white dark:bg-bgcolLight rounded-3xl overflow-hidden flex flex-col shadow-dark dark:shadow-none">
             <img
@@ -96,14 +120,16 @@ const Home = () => {
             />
             <div className="relative">
               <Link
-                to="projects/lingo"
+                to="projects#lingo"
                 className="absolute top-[-2rem] left-[50%] translate-x-[-50%] bg-primaryDark text-white dark:bg-white dark:text-bgcol px-6 py-3 text-3xl rounded-full font-semibold cursor-pointer"
               >
                 MemoLingo
               </Link>
             </div>
-            <div className="mt-[3rem] px-6">
-              <h3 className="text-center mb-5">Technologies I used:</h3>
+            <div className="mt-[4rem] px-6">
+              <h3 className="text-center mb-2 uppercase text-primaryDark dark:text-primary">
+                TECH STACK
+              </h3>
               <ul className="mt-2 mb-[2rem] text-center">
                 <li>React</li>
                 <li>React Query</li>
@@ -112,16 +138,23 @@ const Home = () => {
                 <li>Typescript</li>
               </ul>
             </div>
-            <button className="mt-auto mx-auto w-[10rem] border-2 rounded-full border-primaryDark hover:bg-primaryDark hover:text-white dark:border-primary mb-[2rem] text-[1.8rem] font-semibold dark:hover:bg-primary dark:hover:text-bgcol transition-all">
+            <a
+              href="https://memolingo.netlify.app/"
+              target="_blank"
+              className="mt-auto mx-auto w-[10rem] border-2 rounded-full border-primaryDark hover:bg-primaryDark hover:text-white dark:border-primary mb-[2rem] text-[1.8rem] font-semibold dark:hover:bg-primary dark:hover:text-bgcol transition-all text-center"
+            >
               Visit
-            </button>
+            </a>
           </div>
         </div>
-        <button className="block mx-auto mt-[2rem] border-b-2 border-primaryDark dark:border-white">
+        <Link
+          to="projects"
+          className="inline-block mx-auto mt-[2rem] border-b-2 border-primaryDark dark:border-white"
+        >
           See all projects
-        </button>
+        </Link>
       </section>
-    </>
+    </motion.div>
   );
 };
 
