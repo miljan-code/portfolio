@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 import { motion } from "framer-motion";
 
 import me from "../assets/profile-pic-12.png";
@@ -8,6 +7,9 @@ import reactpic from "../assets/react.png";
 import lingo from "../assets/lingo.jpg";
 
 import { HiArrowRight } from "react-icons/hi";
+
+import Card from "./Card";
+import db from "../store/db.json";
 
 const Home = () => {
   return (
@@ -49,103 +51,14 @@ const Home = () => {
           My projects
         </h2>
         <div className="mt-[2rem] flex flex-col ms:flex-row xs:max-w-[400px] ms:max-w-full xs:mx-auto gap-[3rem]">
-          <div className="flex-1 bg-white dark:bg-bgcolLight rounded-3xl overflow-hidden flex flex-col shadow-dark dark:shadow-none">
-            <img
-              src={cocktails}
-              alt="Cocktails"
-              className="w-full h-[200px] object-cover"
+          {db.map((item) => (
+            <Card
+              name={item.name}
+              image={item.image}
+              techStack={item.technologies}
+              link={item.link}
             />
-            <div className="relative">
-              <Link
-                to="projects#thirsty"
-                className="absolute top-[-2rem] left-[50%] translate-x-[-50%] bg-primaryDark text-white dark:bg-white dark:text-bgcol px-6 py-3 text-3xl rounded-full font-semibold cursor-pointer"
-              >
-                I'm Thirsty
-              </Link>
-            </div>
-            <div className="mt-[4rem] px-6">
-              <h3 className="text-center mb-2 uppercase text-primaryDark dark:text-primary pl-[1rem]">
-                TECH STACK
-              </h3>
-              <ul className="mt-2 pl-4 mb-[2rem] text-center">
-                <li>React</li>
-                <li>React Query</li>
-              </ul>
-            </div>
-            <a
-              href="https://im-thirsty.netlify.app/"
-              target="_blank"
-              className="mt-auto mx-auto w-[10rem] border-2 rounded-full border-primaryDark hover:bg-primaryDark hover:text-white dark:border-primary mb-[2rem] text-[1.8rem] font-semibold dark:hover:bg-primary dark:hover:text-bgcol transition-all text-center"
-            >
-              Visit
-            </a>
-          </div>
-          <div className="flex-1 bg-white dark:bg-bgcolLight rounded-3xl overflow-hidden flex flex-col shadow-dark dark:shadow-none">
-            <img
-              src={reactpic}
-              alt="React"
-              className="w-full h-[200px] object-cover"
-            />
-            <div className="relative">
-              <Link
-                to="/projects#blog"
-                className="absolute top-[-2rem] left-[50%] translate-x-[-50%] bg-primaryDark text-white dark:bg-white dark:text-bgcol px-6 py-3 text-3xl rounded-full font-semibold cursor-pointer"
-              >
-                React Blog
-              </Link>
-            </div>
-            <div className="mt-[4rem] px-6">
-              <h3 className="text-center mb-2 uppercase text-primaryDark dark:text-primary pl-[1rem]">
-                TECH STACK
-              </h3>
-              <ul className="mt-2 pl-4 mb-[2rem] text-center">
-                <li>React</li>
-                <li>React Query</li>
-                <li>Firebase</li>
-              </ul>
-            </div>
-            <a
-              href="https://react-blog-miljan.netlify.app/"
-              target="_blank"
-              className="mt-auto mx-auto w-[10rem] border-2 rounded-full border-primaryDark hover:bg-primaryDark hover:text-white dark:border-primary mb-[2rem] text-[1.8rem] font-semibold dark:hover:bg-primary dark:hover:text-bgcol transition-all text-center"
-            >
-              Visit
-            </a>
-          </div>
-          <div className="flex-1 bg-white dark:bg-bgcolLight rounded-3xl overflow-hidden flex flex-col shadow-dark dark:shadow-none">
-            <img
-              src={lingo}
-              alt="Languages"
-              className="w-full h-[200px] object-cover"
-            />
-            <div className="relative">
-              <Link
-                to="projects#lingo"
-                className="absolute top-[-2rem] left-[50%] translate-x-[-50%] bg-primaryDark text-white dark:bg-white dark:text-bgcol px-6 py-3 text-3xl rounded-full font-semibold cursor-pointer"
-              >
-                MemoLingo
-              </Link>
-            </div>
-            <div className="mt-[4rem] px-6">
-              <h3 className="text-center mb-2 uppercase text-primaryDark dark:text-primary">
-                TECH STACK
-              </h3>
-              <ul className="mt-2 mb-[2rem] text-center">
-                <li>React</li>
-                <li>React Query</li>
-                <li>Firebase</li>
-                <li>Tailwind</li>
-                <li>Typescript</li>
-              </ul>
-            </div>
-            <a
-              href="https://memolingo.netlify.app/"
-              target="_blank"
-              className="mt-auto mx-auto w-[10rem] border-2 rounded-full border-primaryDark hover:bg-primaryDark hover:text-white dark:border-primary mb-[2rem] text-[1.8rem] font-semibold dark:hover:bg-primary dark:hover:text-bgcol transition-all text-center"
-            >
-              Visit
-            </a>
-          </div>
+          ))}
         </div>
         <Link
           to="projects"

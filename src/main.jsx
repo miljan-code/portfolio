@@ -10,8 +10,6 @@ import Projects from "./components/Projects";
 import Home from "./components/Home";
 import About from "./components/About";
 
-import db from "./store/db.json";
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -28,7 +26,6 @@ const router = createBrowserRouter([
       },
       {
         path: "projects",
-        loader: () => db,
         element: <Projects />,
       },
     ],

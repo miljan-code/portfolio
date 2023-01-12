@@ -1,32 +1,37 @@
-import { useRef } from "react";
-
-const Project = ({ name, techStackImgs, image, details }) => {
+const Project = ({ name, techStackImgs, image, details, link }) => {
   return (
-    <div className="rounded-2xl flex overflow-hidden shadow-sm dark:shadow-none">
+    <div className="rounded-2xl ms:flex overflow-hidden shadow-sm dark:shadow-none">
       <div className="cursor-pointer">
         <img
           src={image}
           alt={name}
-          className="w-[400px] h-[400px] object-cover"
+          className="ms:w-[400px] ms:h-[400px] h-[300px] ms:object-cover w-full object-cover"
         />
       </div>
-      <div className="bg-slate-100 dark:bg-bgcolLight flex-1">
+      <div className="bg-slate-100 dark:bg-bgcolLight flex-1 flex flex-col">
         <h2 className="text-center text-[2.6rem] font-semibold mt-[2rem]">
           {name}
         </h2>
-        <div className="flex justify-evenly mt-[2rem] gap-[1rem]">
+        <div className="flex-wrap ms:flex-nowrap flex justify-evenly mt-[3rem] gap-[3rem] ms:gap-[1rem]">
           {techStackImgs.map((img) => (
             <img
               key={crypto.randomUUID()}
               src={img}
               alt=""
-              className="w-[100px] cursor-pointer"
+              className="w-[75px] lg:w-[100px] cursor-pointer"
             />
           ))}
         </div>
-        <div className="">
-          <p>{details}</p>
-        </div>
+        <p className="px-[2.5rem] pt-[2rem] pb-[4rem] ms:pb-[2rem] mt-[1rem]">
+          {details}
+        </p>
+        <a
+          href={link}
+          target="_blank"
+          className="mt-auto mx-auto w-[10rem] border-2 rounded-full border-primaryDark hover:bg-primaryDark hover:text-white dark:border-primary mb-[2rem] text-[1.8rem] font-semibold dark:hover:bg-primary dark:hover:text-bgcol transition-all text-center"
+        >
+          Visit
+        </a>
       </div>
     </div>
   );

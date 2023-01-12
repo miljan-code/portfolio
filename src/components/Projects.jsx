@@ -4,8 +4,6 @@ import db from "../store/db.json";
 import Project from "./Project";
 
 const Projects = () => {
-  console.log(db);
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -16,7 +14,7 @@ const Projects = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <section className="flex flex-col gap-[6rem]">
+      <section className="flex flex-col gap-[6rem] pb-[7rem]">
         <h2 className="mt-[5rem] text-[3rem] text-center font-bold uppercase">
           My recent{" "}
           <span className="dark:text-primary tracking-wide">projects</span>
@@ -28,6 +26,7 @@ const Projects = () => {
             name={project.name}
             techStackImgs={project.techStackImgs}
             details={project.details}
+            link={project.link}
           />
         ))}
       </section>
