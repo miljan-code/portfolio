@@ -9,7 +9,8 @@
       "https://react-query-v3.tanstack.com/_next/static/images/emblem-light-628080660fddb35787ff6c77e97ca43e.svg"
     ],
     "details": "For this application I have used CocktailDB API which allows you to search through cocktails, find the necessary ingredients and instructions for preparation. Focus was on practicing React Query and fetching data, not on design.",
-    "link": "https://im-thirsty.netlify.app/"
+    "link": "https://im-thirsty.netlify.app/",
+    "github": "https://github.com/miljan-code/imthirsty"
   },
   {
     "id": "blog",
@@ -22,7 +23,8 @@
       "https://firebaseopensource.com/logo-small.png"
     ],
     "details": "In this project focus was on practicing Firebase and CRUD. This app allows you to register, create new posts, edit, delete and react to them. All this is possible only if you are an registered user. Feel free to register and try it out, registration is quick and real info is not required.",
-    "link": "https://react-blog-miljan.netlify.app/"
+    "link": "https://react-blog-miljan.netlify.app/",
+    "github": "https://github.com/miljan-code/react-blog"
   },
   {
     "id": "lingo",
@@ -43,6 +45,7 @@
       "https://skillmagic-public.s3.us-west-2.amazonaws.com/content-images/typescript-logo.svg"
     ],
     "details": "MemoLingo helps you memorize words in foreign languages. All you need to do is add recently learned word in foreign language, the translation in your native language and url for image that associates you on that word. App is not complex but I think it could be useful and I'm using it on daily basis to practice my Español! Y me gusta mucho!",
-    "link": "https://memolingo.netlify.app/"
+    "link": "https://memolingo.netlify.app/",
+    "github": "https://github.com/miljan-code/memo-lingo"
   }
 ]

@@ -2,9 +2,6 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import me from "../assets/profile-pic-12.png";
-import cocktails from "../assets/cocktails.jpg";
-import reactpic from "../assets/react.png";
-import lingo from "../assets/lingo.jpg";
 
 import { HiArrowRight } from "react-icons/hi";
 
@@ -53,6 +50,7 @@ const Home = () => {
         <div className="mt-[2rem] flex flex-col ms:flex-row xs:max-w-[400px] ms:max-w-full xs:mx-auto gap-[3rem]">
           {db.map((item) => (
             <Card
+              key={crypto.randomUUID()}
               name={item.name}
               image={item.image}
               techStack={item.technologies}
