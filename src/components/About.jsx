@@ -23,63 +23,62 @@ const About = () => {
           />
         </div>
         <p className="text-justify mt-[-.5rem] leading-[1.7] font-normal dark:font-light text-[1.8rem]">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas neque
-          maiores quaerat facilis! Est nobis culpa minima saepe animi. Vel.
+          Hello! My name is Miljan, I'm a developer, occasional YouTube content
+          creator and React & JavaScript enthusiast. I still haven't found my
+          first job in this industry, which I stepped into few months ago, but I
+          hope to succeed in it during 2023 and build a lot of new interesting
+          things.
           <br />
           <br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-          soluta officia perferendis ut explicabo earum nisi consequatur
-          corrupti mollitia non, eius dolore voluptatibus reiciendis
-          consequuntur sunt ducimus magnam autem veritatis.
+          I had my first contact with programming and Web development when I was
+          very young, in elementary school. Since I started surfing the Internet
+          very early, I came across various websites and forums where I spent a
+          lot of time. The thing is that whenever something on the internet
+          fascinated me, I always wanted to try to make it myself.
           <br />
           <br />
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia aut
-          sed atque accusantium, numquam nihil minima quisquam iusto soluta quis
-          id doloribus enim, quas totam molestiae, saepe distinctio vitae quam
-          ipsam. In perferendis rem numquam mollitia magni ad beatae dolore,
-          tempora hic dolorum corporis vel perspiciatis aperiam consectetur
-          dolor esse.
+          So I started creating forums using phpBB3, SMF and vBulletin, I've
+          been creating my own mods and scripts for the games I played, also
+          running my own game servers for which I created the websites myself.
           <br />
           <br />
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius qui
-          inventore pariatur quas mollitia facere illo placeat. Perspiciatis
-          iste, impedit harum quis temporibus rerum necessitatibus minus, aut
-          alias et earum. Vero, assumenda incidunt. Esse rem ipsam explicabo
-          molestias quo nostrum?
+          Although I had a lot of exposure to programming, I didn't think of it
+          as a job that I would do one day, and due to circumstances, life took
+          me to a completely different side, dealing with some things that have
+          nothing to do with programming in general.
           <br />
           <br />
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, nulla
-          deleniti distinctio cum aspernatur corrupti rerum. Consequuntur
-          possimus eaque vero autem suscipit quidem. Voluptatibus corporis
-          placeat laudantium beatae nihil quidem sunt! Sed et earum ipsam
-          necessitatibus natus molestiae perspiciatis debitis rerum numquam
-          similique veniam, eveniet ut unde doloribus suscipit quis cupiditate
-          eligendi a incidunt corporis animi libero, quae deleniti? Consequuntur
-          harum cumque ut maiores quibusdam reprehenderit reiciendis dolorem
-          deserunt commodi accusantium veritatis quos velit recusandae modi,
-          fugit debitis quod atque nostrum sunt sequi dignissimos exercitationem
-          nobis voluptatem porro. Culpa minus, quasi aut laboriosam repellat
-          exercitationem fuga corporis ipsa quod quo.
+          During the summer of 2022, I started to seriously improve myself in
+          terms of Web development. I completed several courses on Udemy, among
+          them the HTML & CSS and JavaScript course by Jonas Schmedtmann, as
+          well as the React course by Maximilian Shawrzmuller. I continued my
+          learning through making my own projects, as well as reading
+          documentation and watching tutorials on YouTube.
+          <br />
+          <br />I am very happy and excited because I have finally redirected my
+          life and my career to go in the desired direction and I can't wait to
+          start my first job in Web development!
         </p>
         <div className="flex gap-10">
-          <Link
-            to="/"
+          <a
+            href="https://drive.proton.me/urls/146WP71800#nCLm9bK4qq3s"
+            target="_blank"
             className="mt-[4rem] text-3xl font-semibold bg-primaryDark text-white hover:bg-black dark:bg-white px-6 py-4 rounded-full dark:text-bgcol dark:hover:bg-primary transition-all inline-flex items-center gap-2 mx-auto ss:mx-0"
           >
             Resume{" "}
             <span className="mt-1">
               <FaDownload size={15} />
             </span>
-          </Link>
-          <Link
-            to="about"
+          </a>
+          <a
+            href="mailto:miljangicic@proton.me"
             className="mt-[4rem] text-3xl font-semibold bg-primaryDark text-white hover:bg-black dark:bg-white px-6 py-4 rounded-full dark:text-bgcol dark:hover:bg-primary transition-all inline-flex items-center gap-2 mx-auto ss:mx-0"
           >
             Email{" "}
             <span className="mt-1">
               <HiMail size={18} />
             </span>
-          </Link>
+          </a>
         </div>
       </div>
     </PageStarter>

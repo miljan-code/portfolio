@@ -3,7 +3,7 @@
     "id": "thirsty",
     "name": "I'm  Thirsty",
     "technologies": ["React", "React Query"],
-    "image": "https://miljangicic.netlify.app/assets/cocktails.063f2fcc.jpg",
+    "image": "https://i.ibb.co/HpLTxn6/cocktails.jpg",
     "techStackImgs": [
       "https://styles.redditmedia.com/t5_2su6s/styles/communityIcon_4g1uo0kd87c61.png?width=256&s=3f7493995143d3cf40b1fedc582607cea194b579",
       "https://react-query-v3.tanstack.com/_next/static/images/emblem-light-628080660fddb35787ff6c77e97ca43e.svg"
@@ -16,7 +16,7 @@
     "id": "blog",
     "name": "React Blog",
     "technologies": ["React", "React Query", "Firebase"],
-    "image": "https://miljangicic.netlify.app/assets/react.0314f50b.png",
+    "image": "https://i.ibb.co/VNXQD22/react.png",
     "techStackImgs": [
       "https://styles.redditmedia.com/t5_2su6s/styles/communityIcon_4g1uo0kd87c61.png?width=256&s=3f7493995143d3cf40b1fedc582607cea194b579",
       "https://react-query-v3.tanstack.com/_next/static/images/emblem-light-628080660fddb35787ff6c77e97ca43e.svg",
@@ -36,7 +36,7 @@
       "Tailwind",
       "Typescript"
     ],
-    "image": "https://miljangicic.netlify.app/assets/lingo.a22d20e1.jpg",
+    "image": "https://i.ibb.co/PG8r4hh/lingo.jpg",
     "techStackImgs": [
       "https://styles.redditmedia.com/t5_2su6s/styles/communityIcon_4g1uo0kd87c61.png?width=256&s=3f7493995143d3cf40b1fedc582607cea194b579",
       "https://react-query-v3.tanstack.com/_next/static/images/emblem-light-628080660fddb35787ff6c77e97ca43e.svg",

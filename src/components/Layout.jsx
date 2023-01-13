@@ -82,10 +82,10 @@ const Layout = ({ children }) => {
             <a target="_blank" href="https://github.com/miljan-code">
               <FaGithub />
             </a>
-            <a target="_blank" href="https://github.com/miljan-code">
+            <a target="_blank" href="https://linkedin.com/in/miljangicic">
               <FaLinkedin />
             </a>
-            <a target="_blank" href="mailto:miljangicic0@gmail.com">
+            <a target="_blank" href="mailto:miljangicic@proton.me">
               <HiMail className="text-[3rem]" />
             </a>
             <a target="_blank" href="https://t.me/miljan47">
