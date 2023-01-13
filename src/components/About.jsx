@@ -26,7 +26,7 @@ const About = () => {
           Hello! My name is Miljan, I'm a developer, occasional YouTube content
           creator and React & JavaScript enthusiast. I still haven't found my
           first job in this industry, which I stepped into few months ago, but I
-          hope to succeed in it during 2023 and build a lot of new interesting
+          hope to succeed in it during 2023 and build a lot of interesting
           things.
           <br />
           <br />
@@ -42,8 +42,8 @@ const About = () => {
           running my own game servers for which I created the websites myself.
           <br />
           <br />
-          Although I had a lot of exposure to programming, I didn't think of it
-          as a job that I would do one day, and due to circumstances, life took
+          Because I had a lot of exposure to programming, I was thinking of it
+          as a job that I would do one day, but due to circumstances, life took
           me to a completely different side, dealing with some things that have
           nothing to do with programming in general.
           <br />
@@ -52,12 +52,12 @@ const About = () => {
           terms of Web development. I completed several courses on Udemy, among
           them the HTML & CSS and JavaScript course by Jonas Schmedtmann, as
           well as the React course by Maximilian Shawrzmuller. I continued my
-          learning through making my own projects, as well as reading
+          learning through making my own projects, as well as reading through
           documentation and watching tutorials on YouTube.
           <br />
           <br />I am very happy and excited because I have finally redirected my
           life and my career to go in the desired direction and I can't wait to
-          start my first job in Web development!
+          start my first Web development job!
         </p>
         <div className="flex gap-10">
           <a
