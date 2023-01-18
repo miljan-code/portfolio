@@ -61,7 +61,7 @@ const About = () => {
         </p>
         <div className="flex gap-10">
           <a
-            href="https://drive.proton.me/urls/146WP71800#nCLm9bK4qq3s"
+            href="https://drive.proton.me/urls/FEP93DAJKM#EViXJInoknQr"
             target="_blank"
             className="mt-[4rem] text-3xl font-semibold bg-primaryDark text-white hover:bg-black dark:bg-white px-6 py-4 rounded-full dark:text-bgcol dark:hover:bg-primary transition-all inline-flex items-center gap-2 mx-auto ss:mx-0"
           >

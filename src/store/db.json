@@ -1,30 +1,17 @@
 [
   {
-    "id": "thirsty",
-    "name": "I'm  Thirsty",
-    "technologies": ["React", "React Query"],
-    "image": "https://i.ibb.co/HpLTxn6/cocktails.jpg",
+    "id": "rps",
+    "name": "RPS",
+    "technologies": ["React", "Tailwind", "Typescript"],
+    "image": "https://static.vecteezy.com/system/resources/previews/000/691/497/original/rock-paper-scissors-neon-icons-vector.jpg",
     "techStackImgs": [
       "https://styles.redditmedia.com/t5_2su6s/styles/communityIcon_4g1uo0kd87c61.png?width=256&s=3f7493995143d3cf40b1fedc582607cea194b579",
-      "https://react-query-v3.tanstack.com/_next/static/images/emblem-light-628080660fddb35787ff6c77e97ca43e.svg"
+      "https://petermekhaeil.gallerycdn.vsassets.io/extensions/petermekhaeil/vscode-tailwindcss-explorer/0.7.0/1655742967328/Microsoft.VisualStudio.Services.Icons.Default",
+      "https://skillmagic-public.s3.us-west-2.amazonaws.com/content-images/typescript-logo.svg"
     ],
-    "details": "For this application I have used CocktailDB API which allows you to search through cocktails, find the necessary ingredients and instructions for preparation. Focus was on practicing React Query and fetching data, not on design.",
-    "link": "https://im-thirsty.netlify.app/",
-    "github": "https://github.com/miljan-code/imthirsty"
-  },
-  {
-    "id": "blog",
-    "name": "React Blog",
-    "technologies": ["React", "React Query", "Firebase"],
-    "image": "https://i.ibb.co/VNXQD22/react.png",
-    "techStackImgs": [
-      "https://styles.redditmedia.com/t5_2su6s/styles/communityIcon_4g1uo0kd87c61.png?width=256&s=3f7493995143d3cf40b1fedc582607cea194b579",
-      "https://react-query-v3.tanstack.com/_next/static/images/emblem-light-628080660fddb35787ff6c77e97ca43e.svg",
-      "https://firebaseopensource.com/logo-small.png"
-    ],
-    "details": "In this project focus was on practicing Firebase and CRUD. This app allows you to register, create new posts, edit, delete and react to them. All this is possible only if you are an registered user. Feel free to register and try it out, registration is quick and real info is not required.",
-    "link": "https://react-blog-miljan.netlify.app/",
-    "github": "https://github.com/miljan-code/react-blog"
+    "details": "Old school, well known game. Rock, Paper, Scissors. There's no explanation needed, give it a try and try to beat AI! ",
+    "link": "https://rps-rps.netlify.app/",
+    "github": "https://github.com/miljan-code/rock-paper-scissors"
   },
   {
     "id": "lingo",
@@ -47,5 +34,32 @@
     "details": "MemoLingo helps you memorize words in foreign languages. All you need to do is add recently learned word in foreign language, the translation in your native language and url for image that associates you on that word. App is not complex but I think it could be useful and I'm using it on daily basis to practice my Español! Y me gusta mucho!",
     "link": "https://memolingo.netlify.app/",
     "github": "https://github.com/miljan-code/memo-lingo"
+  },
+  {
+    "id": "blog",
+    "name": "React Blog",
+    "technologies": ["React", "React Query", "Firebase"],
+    "image": "https://i.ibb.co/VNXQD22/react.png",
+    "techStackImgs": [
+      "https://styles.redditmedia.com/t5_2su6s/styles/communityIcon_4g1uo0kd87c61.png?width=256&s=3f7493995143d3cf40b1fedc582607cea194b579",
+      "https://react-query-v3.tanstack.com/_next/static/images/emblem-light-628080660fddb35787ff6c77e97ca43e.svg",
+      "https://firebaseopensource.com/logo-small.png"
+    ],
+    "details": "In this project focus was on practicing Firebase and CRUD. This app allows you to register, create new posts, edit, delete and react to them. All this is possible only if you are an registered user. Feel free to register and try it out, registration is quick and real info is not required.",
+    "link": "https://react-blog-miljan.netlify.app/",
+    "github": "https://github.com/miljan-code/react-blog"
+  },
+  {
+    "id": "thirsty",
+    "name": "I'm  Thirsty",
+    "technologies": ["React", "React Query"],
+    "image": "https://i.ibb.co/HpLTxn6/cocktails.jpg",
+    "techStackImgs": [
+      "https://styles.redditmedia.com/t5_2su6s/styles/communityIcon_4g1uo0kd87c61.png?width=256&s=3f7493995143d3cf40b1fedc582607cea194b579",
+      "https://react-query-v3.tanstack.com/_next/static/images/emblem-light-628080660fddb35787ff6c77e97ca43e.svg"
+    ],
+    "details": "For this application I have used CocktailDB API which allows you to search through cocktails, find the necessary ingredients and instructions for preparation. Focus was on practicing React Query and fetching data, not on design.",
+    "link": "https://im-thirsty.netlify.app/",
+    "github": "https://github.com/miljan-code/imthirsty"
   }
 ]
