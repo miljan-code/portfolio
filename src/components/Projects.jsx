@@ -1,7 +1,7 @@
-import { useEffect } from "react";
-import db from "../store/db.json";
-import Project from "./Project";
-import PageStarter from "./PageStarter";
+import { useEffect } from 'react';
+import { projects } from '../constants';
+import Project from './Project';
+import PageStarter from './PageStarter';
 
 const Projects = () => {
   useEffect(() => {
@@ -10,7 +10,7 @@ const Projects = () => {
 
   return (
     <PageStarter title="My recent projects.">
-      {db.map((project) => (
+      {projects.map(project => (
         <Project
           key={crypto.randomUUID()}
           image={project.image}

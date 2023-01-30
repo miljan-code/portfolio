@@ -6,7 +6,7 @@ import me from '../assets/profile-pic-12.png';
 import { HiArrowRight } from 'react-icons/hi';
 
 import Card from './Card';
-import db from '../store/db.json';
+import { projects } from '../constants';
 
 const Home = () => {
   return (
@@ -48,7 +48,7 @@ const Home = () => {
           My projects
         </h2>
         <div className="mt-[2rem] flex flex-col ms:flex-row xs:max-w-[400px] ms:max-w-full xs:mx-auto gap-[3rem]">
-          {db.slice(0, 3).map(item => (
+          {projects.slice(0, 3).map(item => (
             <Card
               key={crypto.randomUUID()}
               name={item.name}

@@ -1,11 +1,9 @@
-import { Link } from "react-router-dom";
+import PageStarter from './PageStarter';
+import mypic from '../assets/me-2.jpg';
 
-import PageStarter from "./PageStarter";
-import mypic from "../assets/me-2.jpg";
-
-import { FaDownload } from "react-icons/fa";
-import { HiMail } from "react-icons/hi";
-import { useEffect } from "react";
+import { FaDownload } from 'react-icons/fa';
+import { HiMail } from 'react-icons/hi';
+import { useEffect } from 'react';
 
 const About = () => {
   useEffect(() => {
@@ -24,10 +22,7 @@ const About = () => {
         </div>
         <p className="text-justify mt-[-.5rem] leading-[1.7] font-normal dark:font-light text-[1.8rem]">
           Hello! My name is Miljan, I'm a developer, occasional YouTube content
-          creator and React & JavaScript enthusiast. I still haven't found my
-          first job in this industry, which I stepped into few months ago, but I
-          hope to succeed in it during 2023 and build a lot of interesting
-          things.
+          creator and React & JavaScript enthusiast.
           <br />
           <br />
           I had my first contact with programming and Web development when I was
@@ -42,22 +37,15 @@ const About = () => {
           running my own game servers for which I created the websites myself.
           <br />
           <br />
-          Because I had a lot of exposure to programming, I was thinking of it
-          as a job that I would do one day, but due to circumstances, life took
-          me to a completely different side, dealing with some things that have
-          nothing to do with programming in general.
+          In 2022, I began to seriously focus on improving my skills in web
+          development. I have learned to use technologies such as React, Next
+          JS, Tailwind, TypeScript, Redux, Git, and Sass.
           <br />
-          <br />
-          During the summer of 2022, I started to seriously improve myself in
-          terms of Web development. I completed several courses on Udemy, among
-          them the HTML & CSS and JavaScript course by Jonas Schmedtmann, as
-          well as the React course by Maximilian Shawrzmuller. I continued my
-          learning through making my own projects, as well as reading through
-          documentation and watching tutorials on YouTube.
-          <br />
-          <br />I am very happy and excited because I have finally redirected my
-          life and my career to go in the desired direction and I can't wait to
-          start my first Web development job!
+          <br />I completed several courses on Udemy, among them the HTML & CSS
+          and JavaScript course by Jonas Schmedtmann, as well as the React
+          course by Maximilian Shawrzmuller. I continued my learning through
+          making my own projects, as well as reading through documentation and
+          watching tutorials on YouTube.
         </p>
         <div className="flex gap-10">
           <a
@@ -65,16 +53,16 @@ const About = () => {
             target="_blank"
             className="mt-[4rem] text-3xl font-semibold bg-primaryDark text-white hover:bg-black dark:bg-white px-6 py-4 rounded-full dark:text-bgcol dark:hover:bg-primary transition-all inline-flex items-center gap-2 mx-auto ss:mx-0"
           >
-            Resume{" "}
+            Resume{' '}
             <span className="mt-1">
               <FaDownload size={15} />
             </span>
           </a>
           <a
-            href="mailto:miljangicic@proton.me"
+            href="mailto:miljangicic33@gmail.com"
             className="mt-[4rem] text-3xl font-semibold bg-primaryDark text-white hover:bg-black dark:bg-white px-6 py-4 rounded-full dark:text-bgcol dark:hover:bg-primary transition-all inline-flex items-center gap-2 mx-auto ss:mx-0"
           >
-            Email{" "}
+            Email{' '}
             <span className="mt-1">
               <HiMail size={18} />
             </span>

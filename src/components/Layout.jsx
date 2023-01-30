@@ -1,16 +1,16 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-import Navigation from "./Navigation";
+import Navigation from './Navigation';
 
-import rays from "../assets/rays.png";
-import logo from "../assets/logo.png";
+import rays from '../assets/rays.png';
+import logo from '../assets/logo.png';
 
-import { BsMoonFill, BsSunFill } from "react-icons/bs";
-import { FaGithub, FaLinkedin, FaTelegramPlane } from "react-icons/fa";
-import { HiMail } from "react-icons/hi";
+import { BsMoonFill, BsSunFill } from 'react-icons/bs';
+import { FaGithub, FaLinkedin, FaTelegramPlane } from 'react-icons/fa';
+import { HiMail } from 'react-icons/hi';
 
-import MobileMenu from "./MobileMenu";
+import MobileMenu from './MobileMenu';
 
 const Layout = ({ children }) => {
   const [darkMode, setDarkMode] = useState(true);
@@ -19,15 +19,15 @@ const Layout = ({ children }) => {
   const handleMobileMenu = () => {
     if (openMenu) {
       setOpenMenu(false);
-      document.body.style.overflow = "visible";
+      document.body.style.overflow = 'visible';
     } else {
       setOpenMenu(true);
-      document.body.style.overflow = "hidden";
+      document.body.style.overflow = 'hidden';
     }
   };
 
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div className={darkMode ? 'dark' : ''}>
       {openMenu && (
         <MobileMenu
           closeMenu={handleMobileMenu}
@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
       )}
       <div className="dark:bg-bgcol dark:text-white min-h-[100vh]">
         <div className="absolute sm:top-[-20rem] top-[-5rem] left-[50%] translate-x-[-50%] dark:opacity-75 h-[30rem] w-[25rem] xs:h-[40rem] xs:w-[30rem] sm:h-[76rem] sm:w-[59rem] scale-[1.3] opacity-0 z-0">
-          <img src={rays} alt="" height={"100%"} width={"100%"} />
+          <img src={rays} alt="" height={'100%'} width={'100%'} />
         </div>
         <header className="px-10 lg:px-0 relative p-5 bg-slate-100 dark:bg-bgcol dark:bg-opacity-30 z-50">
           <div className="max-w-[110rem] mx-auto flex items-center justify-between">
@@ -59,7 +59,7 @@ const Layout = ({ children }) => {
             </div>
             <div className="hidden sm:block pl-[9rem]">
               <button
-                onClick={() => setDarkMode((prev) => !prev)}
+                onClick={() => setDarkMode(prev => !prev)}
                 className="text-black dark:text-white hover:text-primaryDark dark:hover:text-primary cursor-pointer text-3xl transition-all block dark:bg-slate-700 p-3 rounded-full"
               >
                 {darkMode && <BsSunFill />}
@@ -73,9 +73,9 @@ const Layout = ({ children }) => {
         </main>
         <footer className="px-10 lg:px-0 pb-[3rem] text-center mt-[5rem]">
           <p className="mb-[1rem]">
-            developed by{" "}
+            developed by{' '}
             <span className="text-primaryDark font-semibold dark:font-normal dark:text-primary cursor-pointer">
-              miljan.tech
+              miljan
             </span>
           </p>
           <div className="flex gap-[1rem] items-center justify-center text-[2.5rem]">
@@ -85,7 +85,7 @@ const Layout = ({ children }) => {
             <a target="_blank" href="https://linkedin.com/in/miljangicic">
               <FaLinkedin />
             </a>
-            <a target="_blank" href="mailto:miljangicic@proton.me">
+            <a target="_blank" href="mailto:miljangicic33@gmail.com">
               <HiMail className="text-[3rem]" />
             </a>
             <a target="_blank" href="https://t.me/miljan47">
