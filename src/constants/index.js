@@ -2,11 +2,11 @@ export const projects = [
   {
     id: 'travel',
     name: 'Travel Agency',
-    technologies: ['NextJS', 'Tailwind', 'Framer Motion'],
+    technologies: ['NextJS', 'Tailwind'],
     image: '/travelweb.png',
-    techStackImgs: ['/nextjs.ico', '/tailwind.png', '/framer.png'],
+    techStackImgs: ['/nextjs.ico', '/tailwind.png'],
     details:
-      "This Travel Agency website is created based on ARShakir's Design. Link to the original figma file could be found on projects GitHub page. Work is still in progress.",
+      "This Travel Agency website is created based on ARShakir's Design. Link to the original figma file could be found on projects GitHub page.",
     link: 'https://travel-with-jadoo.netlify.app/',
     github: 'https://github.com/miljan-code/travel-web',
   },
