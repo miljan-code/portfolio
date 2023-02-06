@@ -55,22 +55,6 @@ export const projects = [
     link: 'https://react-blog-miljan.netlify.app/',
     github: 'https://github.com/miljan-code/react-blog',
   },
-  // {
-  //   id: 'countries',
-  //   name: 'I 💘 Geography',
-  //   technologies: ['React', 'React Query', 'TypeScript', 'Tailwind'],
-  //   image: '/countries.jpg',
-  //   techStackImgs: [
-  //     '/react.png',
-  //     '/react-query.svg',
-  //     '/typescript.svg',
-  //     '/tailwind.png',
-  //   ],
-  //   details:
-  //     'For this application I have used RestCountries API which allows you to search through countries and find relevant data. Focus was on practicing React Query and fetching data.',
-  //   link: 'https://im-thirsty.netlify.app/',
-  //   github: 'https://github.com/miljan-code/imthirsty',
-  // },
   {
     id: 'thirsty',
     name: "I'm  Thirsty",
@@ -81,5 +65,32 @@ export const projects = [
       'For this application I have used CocktailDB API which allows you to search through cocktails, find the necessary ingredients and instructions for preparation. Focus was on practicing React Query and fetching data, not on design.',
     link: 'https://im-thirsty.netlify.app/',
     github: 'https://github.com/miljan-code/imthirsty',
+  },
+  {
+    id: 'geos',
+    name: 'I ❤ Geography',
+    technologies: ['React', 'React Query', 'Tailwind', 'TypeScript'],
+    image: '/i-love-geo.png',
+    techStackImgs: [
+      '/react.png',
+      '/react-query.svg',
+      '/tailwind.png',
+      '/typescript.svg',
+    ],
+    details:
+      'This app is created as a challenge on Frontend Mentor using Rest Countries API. Some cool features this app has are a custom dropdown menu and some version of infinite scrolling since API does not provide one.',
+    link: 'https://i-love-geo.netlify.app/',
+    github: 'https://github.com/miljan-code/countries-api',
+  },
+  {
+    id: 'dashboard',
+    name: 'Mining Dashboard',
+    technologies: ['NextJS', 'TypeScript'],
+    image: '/dashboard.jpg',
+    techStackImgs: ['/nextjs.ico', '/typescript.svg'],
+    details:
+      "This dashboard is created based on ARShakir's Design. Link to the figma file could be found on projects GitHub page.",
+    link: 'https://mining-dashboard-tau.vercel.app/',
+    github: 'https://github.com/miljan-code/mining-dashboard',
   },
 ];
